@@ -25,7 +25,7 @@ const PromotionSearch = () => {
     <div className="promotion-search">
       <header className="promotion-search__header">
         <h1>Promo_Show</h1>
-        <Link to="">Nova Promoção</Link>
+        <Link to="/create">Nova Promoção</Link>
       </header>
       <input className="promotion-search__input" type="search" placeholder="Buscar" value={search} onChange={(ev) => setSearch(ev.target.value)} />
       <PromotionList promotions={promotions} loading={!promotions.length} />
