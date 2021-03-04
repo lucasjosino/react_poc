@@ -9,7 +9,7 @@ function PagesPromotionForm () {
 
     return (
         <UIContainer>
-            <PromotionForm />
+            <PromotionForm id={id ? Number(id) : null} />
         </UIContainer>
     );
 }

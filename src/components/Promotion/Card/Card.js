@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Card.css';
 
 function PromotionCard({promotion}) {
@@ -22,6 +23,7 @@ function PromotionCard({promotion}) {
                         {promotion.comments.length > 1 ? ' Comentários ' : ' Comentário '}
                     </div>
                     <a href={promotion.url} className="promotion-card__link" target="_blank">IR PARA O SITE</a>
+                    <Link to={`/edit/${promotion.id}`}>Editar</Link>
                 </footer>
             </div>
         </div>
